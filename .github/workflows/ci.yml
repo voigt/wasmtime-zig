@@ -7,6 +7,8 @@ on:
   pull_request:
     branches:
       - main
+  schedule:
+    - cron: '*/5 * * * *' # every fifth minute
 
 jobs:
   build_nix:
